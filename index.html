@@ -145,11 +145,15 @@
     <section class="general">
 
         <div class="general-1">
-            <h2>Aplicaciones Matemáticas Avanzadas</h2>
+            <h2>Formato de entero sin signo</h2>
             <p>
-                En aplicaciones más avanzadas, como la ciencia de datos y la simulación, los números enteros se utilizan en ecuaciones matemáticas y algoritmos para resolver problemas complejos.
+                Un entero sin signo es un entero que no tiene intervalo, su rango está entre 0 y el infinito positivo. No obstante, como no hay manera de que una computadora represente todos los enteros de este intervalo, la mayoría de las computadoras definen una constante llamada el entero máximo sin signo.
+
+ 
+
+Un entero sin signo varía entre 0 y esta constante. El entero máximo sin signo depende del número de bits que la computadora asigna para almacenar un entero sin signo.
             </p>
-            <a href="https://es.khanacademy.org/math/matematicas-avanzadas" class="btn-1">Ayuda</a>
+            <a href="https://www.uacj.mx/CGTI/CDTE/JPM/Documents/IIT/Representacion/representacion-de-numeros.html" class="btn-1">Ayuda</a>
         </div>
         <div class="general-2"></div>
 
@@ -160,11 +164,23 @@
         <div class="general-3"></div>
 
         <div class="general-1">
-            <h2>Representación de Datos</h2>
+            <h2>Formato signo magnitud</h2>
             <p>
-                Los números enteros se utilizan para representar datos, como identificadores de usuarios, edades, calificaciones y otros valores numéricos en una aplicación.
+                El almacenamiento de un entero en el formato de signo y magnitud requiere 1 bit para representar el signo (0 para positivo, 1 para negativo). Es decir, en una asignación de 8 bits, se utilizan 7 bits para representar el valor absoluto (número sin signo) del número y 1 bit para representar el signo.
+
             </p>
-            <a href="http://www.tel.uva.es/personales/josdie/fprog/Material/FP06_Tema02_RepresentacionDatos.pdf" class="btn-1">Extra</a>
+            <p>
+
+                Para almacenar un entero de signo y magnitud es un proceso sencillo:
+
+ 
+
+                Revisar si el número entra dentro del intervalo de números que se pueden almacenar dependiendo de los bits asignados.
+                Convertir el número a binario ignorando el signo
+                Si el número de bits es menor que N-1, se añaden 0 a la izquierda del número binario de manera que haya un total de N-1 bits.
+                Si el número es positivo, se añade un 0 a la izquierda, para convertirlo en un número de N bits. Si el número es negativo, se añade un 1 a la izquierda.
+            </p>
+            <a href="https://www.uacj.mx/CGTI/CDTE/JPM/Documents/IIT/Representacion/representacion-de-numeros.html" class="btn-1">Extra</a>
         </div>
         
     </section>

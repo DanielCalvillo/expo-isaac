@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Números Enteros</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">Zacanozapenses</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./img/menu_icono.png" class="menu-icono"  alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#representacion">Representación</a></li>
+                    <li><a href="#conversion">Conversión</a></li>
+                    <li><a href="#programacion">Programación</a></li>
+                    <li><a href="#conclusion">Conclusión</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container" id="Introduccion">
+
+            <h1>Números Enteros</h1>
+            <p> 
+                Los números enteros en el contexto de la computación son un tipo fundamental de datos que se utilizan para representar valores enteros, ya sean positivos o negativos, sin fracciones o decimales.
+            </p>
+            <a href="https://concepto.de/numeros-enteros/" class="btn-1">Extra</a>
+
+        </div>
+
+    </header>
+
+
+    <section class="coffee" id="representacion">
+
+        <img class="coffee-img" src="./img/" alt="">
+
+        <div class="coffee-content container">
+
+            <h2>Representación de Números Enteros</h2>
+            <p class="txt-p">
+                Los números enteros se representan en binario en las computadoras. Cada dígito binario puede ser 0 o 1, lo que permite representar números enteros de manera eficiente.
+
+                La cantidad de bits utilizados para representar un número entero determina el rango de valores enteros que se pueden representar. Por ejemplo, un entero de 8 bits puede representar valores de -128 a 127 (en complemento a dos).
+
+                 Los números enteros se pueden representar con signo (positivos o negativos) utilizando la representación en complemento a dos.
+
+            </p>
+
+            <div class="coffee-group">
+
+                <div class="coffee-1">
+                    <img src="img/operaciones.jpeg" alt="">
+                    <h3> Operaciones Aritméticas</h3>
+                    <p>
+                        Los números enteros se pueden utilizar en operaciones aritméticas, como suma, resta, multiplicación y división, de manera similar a los números en notación decimal.
+                         Es importante tener en cuenta el desbordamiento de enteros, que ocurre cuando el resultado de una operación supera el rango de valores representables. Por ejemplo, en un entero de 8 bits, la suma de 127 + 1 causaría un desbordamiento.
+                    </p>
+                </div>
+                <div class="coffee-1">
+                    <img src="img/base_binaria.jpeg" alt="">
+                    <h3>Representación en base binaria (binario)</h3>
+                    <p>
+                        En la mayoría de las computadoras y lenguajes de programación, los números enteros se representan en base binaria, que es un sistema numérico de base 2. En este sistema, solo se utilizan dos dígitos: 0 y 1. Cada dígito binario se llama "bit". Los números enteros se representan como combinaciones de bits.
+
+                        Por ejemplo, el número decimal 10 se representa como "1010" en binario. Cada posición de un bit en este número representa una potencia de 2: el bit más a la derecha representa 2^0, el siguiente 2^1, luego 2^2, y así sucesivamente.
+                    </p>
+                </div>
+                <div class="coffee-1">
+                    <img src="img/complemento_dos.jpeg" alt="">
+                    <h3>Representación en complemento a dos</h3>
+                    <p>
+                        Para representar números enteros negativos en sistemas binarios, se utiliza comúnmente el método de complemento a dos. En este sistema, el bit más significativo (el bit más a la izquierda) se usa para indicar el signo, donde 0 significa positivo y 1 significa negativo. Los bits restantes representan el valor absoluto del número.
+
+                        Por ejemplo, el número decimal -5 se representa en complemento a dos como "11111111111111111111111111111011" en una representación de 32 bits. Los 31 bits "1" a la izquierda indican que es negativo, y los últimos 1 y 0 representan el valor absoluto 5
+                    </p>
+                </div>
+
+            </div>
+            <a href="https://concepto.de/numeros-enteros/" class="btn-1">Extra</a>
+
+        </div>
+
+    </section>
+
+    <main class="services">
+
+        <div class="services-content container" id="conversion">
+            <h2>Conversión a Binario</h2>
+
+            <div class="services-group">
+
+                <div class="services-1">
+                    <img src="img/gato_estrella.jpg" alt=""> 
+                    <h3>Paso 1</h3>
+                    <p>
+                        Supongamos que queremos convertir el número decimal 43 en su representación binaria.
+                        Divide el número decimal por 2 y anota el cociente (sin decimales) y el residuo.
+
+                        Dividimos 43 por 2: 43 ÷ 2 = 21, con un residuo de 1. Anotamos 1.
+                    </p>
+                </div>
+                <div class="services-1">
+                    <img src="img/gato_brillos.jpg" alt=""> 
+                    <h3>Paso 2</h3>
+                    <p>
+                        Divide el cociente resultante en el paso anterior por 2 y anota el nuevo cociente y residuo.
+
+                        Dividimos 21 por 2: 21 ÷ 2 = 10, con un residuo de 1. Anotamos 1.
+                    </p>
+                </div>
+                <div class="services-1">
+                    <img src="img/gato_feli.jpg" alt=""> 
+                    <h3>Paso 3</h3>
+                    <p>
+                        Continúa dividiendo el cociente obtenido en el paso anterior hasta que el cociente sea 0. Anota los residuos en orden inverso.
+
+                        Dividimos 10 por 2: 10 ÷ 2 = 5, con un residuo de 0. Anotamos 0.
+                        Dividimos 5 por 2: 5 ÷ 2 = 2, con un residuo de 1. Anotamos 1.
+                        Dividimos 2 por 2: 2 ÷ 2 = 1, con un residuo de 0. Anotamos 0.
+                        Dividimos 1 por 2: 1 ÷ 2 = 0, con un residuo de 1. Anotamos 1.
+                    </p>
+                </div>
+
+            </div>
+            <p>
+                Los residuos anotados en orden inverso forman la representación binaria del número. En este caso, 43 en binario es 101011.
+                Entonces, la conversión del número decimal 43 a binario es igual a 101011. Este proceso se puede aplicar a cualquier número decimal para convertirlo a su equivalente binario.
+            </p>
+            <a href="https://www.youtube.com/watch?v=3xGIXz2dza0" class="btn-1">complemento</a>
+
+        </div>
+
+    </main>
+
+    <section class="general">
+
+        <div class="general-1">
+            <h2>Aplicaciones Matemáticas Avanzadas</h2>
+            <p>
+                En aplicaciones más avanzadas, como la ciencia de datos y la simulación, los números enteros se utilizan en ecuaciones matemáticas y algoritmos para resolver problemas complejos.
+            </p>
+            <a href="https://es.khanacademy.org/math/matematicas-avanzadas" class="btn-1">Ayuda</a>
+        </div>
+        <div class="general-2"></div>
+
+    </section>
+    
+    <section class="general">
+
+        <div class="general-3"></div>
+
+        <div class="general-1">
+            <h2>Representación de Datos</h2>
+            <p>
+                Los números enteros se utilizan para representar datos, como identificadores de usuarios, edades, calificaciones y otros valores numéricos en una aplicación.
+            </p>
+            <a href="http://www.tel.uva.es/personales/josdie/fprog/Material/FP06_Tema02_RepresentacionDatos.pdf" class="btn-1">Extra</a>
+        </div>
+        
+    </section>
+
+    <section class="blog container" id="programacion">
+        <h2>Otros Ejemplos . . .</h2>
+        <p>
+            Los números enteros se utilizan ampliamente en programación debido a su versatilidad y aplicabilidad en una variedad de situaciones. Aquí te presento algunas formas comunes en las que se utilizan números enteros en programación.
+        </p>
+
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="img/contadores_bucles.jpeg" alt="">
+                <h3>Contadores y Bucles </h3>
+                <p>
+                    Los números enteros se utilizan para contar iteraciones en bucles. Por ejemplo, en un bucle "for" o "while", un contador entero controla cuántas veces se ejecuta el bucle
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="img/indices_matrices_listas.jpeg" alt="">
+                <h3>Índices de Matrices y Listas </h3>
+                <p>
+                    Los números enteros se utilizan como índices para acceder a elementos específicos en matrices, listas y otros tipos de estructuras de datos.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="img/control_flujo.jpeg" alt="">
+                <h3>Control de Flujo</h3>
+                <p>
+                    Los números enteros se utilizan en declaraciones de control de flujo, como condicionales "if" y "switch", para tomar decisiones basadas en valores numéricos.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="img/generacion_secuencias.jpeg" alt="">
+                <h3>Generación de Secuencias</h3>
+                <p>
+                    Los números enteros se utilizan para generar secuencias de números, como números aleatorios o números en una serie.
+                </p>
+            </div>
+            
+        </div>
+
+        <a href="#" class="btn-1">Investigue</a>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link" id="conclusion">
+                <h3> Conclusión</h3>
+                <ul>
+                    <li><a href="#">En resumen, los números enteros son un elemento fundamental en la programación y se utilizan en una amplia variedad de aplicaciones, desde operaciones simples hasta aplicaciones matemáticas avanzadas. Su versatilidad los convierte en un recurso esencial en la programación de software y el desarrollo de aplicaciones.</a></li>
+                    <li><a href="#">Aios</a></li>
+                    <li><a href="#">Bye</a></li>
+                    <li><a href="#">Fuera</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
